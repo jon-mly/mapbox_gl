@@ -200,7 +200,7 @@ final class MapboxMapController
   }
 
   private void animateCamera(CameraUpdate cameraUpdate) {
-    mapboxMap.animateCamera(cameraUpdate);
+    mapboxMap.easeCamera(cameraUpdate);
   }
 
   private CameraPosition getCameraPosition() {
@@ -1567,10 +1567,10 @@ final class MapboxMapController
         };
     if (cameraUpdate != null && duration != null) {
       // camera transformation not handled yet
-      mapboxMap.animateCamera(cameraUpdate, duration, onCameraMoveFinishedListener);
+      mapboxMap.easeCamera(cameraUpdate, duration, onCameraMoveFinishedListener);
     } else if (cameraUpdate != null) {
       // camera transformation not handled yet
-      mapboxMap.animateCamera(cameraUpdate, onCameraMoveFinishedListener);
+      mapboxMap.easeCamera(cameraUpdate, onCameraMoveFinishedListener);
     } else {
       result.success(false);
     }
