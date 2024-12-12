@@ -8,7 +8,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.2.0'
+        classpath 'com.android.tools.build:gradle:8.3.2'
     }
 }
 
@@ -36,11 +36,13 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 31
-    ndkVersion "20.1.5948944"
+    namespace 'com.mapbox.mapboxgl'
+    compileSdk 35
+    // ndkVersion "20.1.5948944"
 
     defaultConfig {
-        minSdkVersion 20
+        targetSdkVersion 35
+        minSdkVersion 24
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
