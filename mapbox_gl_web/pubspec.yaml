@@ -1,7 +1,7 @@
 name: mapbox_gl_web
 description: Web platform implementation of mapbox_gl
 version: 0.17.0
-homepage: https://github.com/tobrun/flutter-mapbox-gl
+homepage: https://github.com/jon-mly/mapbox-gl
 
 flutter:
   plugin:
@@ -18,7 +18,7 @@ dependencies:
   meta: ^1.15.0
   mapbox_gl_platform_interface:
     git:
-      url: https://github.com/tobrun/flutter-mapbox-gl.git
+      url: https://github.com/jon-mly/mapbox-gl
       path: mapbox_gl_platform_interface
   mapbox_gl_dart: ^0.2.1
   image: '>=3.0.0 <5.0.0'
@@ -32,5 +32,5 @@ dev_dependencies:
     sdk: flutter
 
 environment:
-  sdk: ">=2.14.0 <3.0.0"
+  sdk: ">=2.15.0 <3.0.0"
   flutter: ">=2.0.0"

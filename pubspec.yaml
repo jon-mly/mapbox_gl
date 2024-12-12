@@ -35,5 +35,4 @@ flutter:
 
 environment:
   sdk: '>=2.15.0 <3.0.0'
-  # Flutter versions prior to 1.10 did not support the flutter.plugin.platforms map.
   flutter: ">=2.0.0"
