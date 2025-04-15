@@ -173,7 +173,9 @@ class MapboxMapController extends ChangeNotifier {
       onUserLocationUpdated?.call(location);
     });
   }
+
   bool _disposed = false;
+  bool get disposed => _disposed;
 
   FillManager? fillManager;
   LineManager? lineManager;
